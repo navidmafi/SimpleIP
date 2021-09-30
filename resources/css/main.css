@@ -1,0 +1,65 @@
+/* Copyright (c) 2021 Navid Mafi <navidmafi2006@gmail.com>
+ Licensed under the GPLv3 Licence.
+See the LICENCE file in the repository root for full licence text.
+*/
+@font-face {
+  font-family: SvnSegit;
+  src: url(../fonts/DSEG7Classic-Italic.woff2);
+}
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: SvnSeg;
+  src: url(../fonts/DSEG7Classic-Regular.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+:root {
+  --GPrim: #1b64c4;
+  --GBlack: #151515;
+  --GGray1: #202020;
+  --GGray2: #303030;
+  --GLight: #ffffff;
+}
+
+body {
+  background-color: var(--GGray2);
+  color: var(--GLight);
+  font-family: "Poppins";
+  height: 100%;
+}
+* {
+  /* border: 1px red dashed;*/
+  box-sizing: border-box;
+}
+.centertext {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#refreshIP {
+  background-color: var(--GLight);
+  color: var(--GGray1);
+  padding: 5% 10%;
+  margin: 4%;
+  border: none;
+  font-family: "Poppins";
+  cursor: pointer;
+  transition: 100ms;
+}
+#refreshIP:hover {
+  background-color: var(--GGray1);
+  color: var(--GLight);
+}
