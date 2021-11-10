@@ -3,16 +3,8 @@
 See the LICENCE file in the repository root for full licence text.
 */
 @font-face {
-  font-family: SvnSegit;
-  src: url(../fonts/DSEG7Classic-Italic.woff2);
-}
-@font-face {
   font-family: Poppins;
   src: url(../fonts/Poppins-Regular.ttf);
-}
-@font-face {
-  font-family: SvnSeg;
-  src: url(../fonts/DSEG7Classic-Regular.woff2);
 }
 * {
   margin: 0;
@@ -20,7 +12,7 @@ See the LICENCE file in the repository root for full licence text.
 }
 html {
   height: 100%;
-  scroll-behavior: smooth;
+  user-select: none;
 }
 :root {
   --GPrim: #1b64c4;
@@ -31,9 +23,10 @@ html {
 }
 
 body {
-  background-color: var(--GGray2);
+  background-color: var(--GGray1);
   color: var(--GLight);
   font-family: "Poppins";
+  font-weight: lighter;
   height: 100%;
 }
 * {
@@ -52,14 +45,36 @@ body {
 #refreshIP {
   background-color: var(--GLight);
   color: var(--GGray1);
-  padding: 5% 10%;
-  margin: 4%;
+  padding: 8px 20px;
   border: none;
   font-family: "Poppins";
+  border-radius: 5px;
   cursor: pointer;
   transition: 100ms;
 }
 #refreshIP:hover {
   background-color: var(--GGray1);
   color: var(--GLight);
+}
+
+.ip {
+  position: relative;
+}
+#sc1 {
+padding: 5px;
+transition: 100ms;
+cursor: default;
+}
+#sc2 {
+  font-size: 1rem;
+}
+.tooltip {
+  position: absolute;
+  transition: 100ms;
+  pointer-events: none;
+  margin: auto auto;
+  z-index: 5;
+  top:3px;
+  width: 100%;
+  padding: 10px;
 }
